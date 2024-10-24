@@ -1,0 +1,223 @@
+:root {
+    --Color1:#10576d ;
+    --Color2:#1d8cad ;
+    --Color3:#22abd4 ;
+    --Color4:#2dc6f5 ;
+    --Color5:#5dd1f5 ;
+    --Color6:#89ddf7 ;
+    --Color7:#bfecfa ;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--Color7);
+    font-family: "Poiret One";
+}
+h1{
+    color: var(--Color1);
+}
+ul {
+    height: 70px;
+    list-style-type: none;
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 0px;
+}
+li {
+    position: relative;
+    padding: 10px; 
+}
+li a{
+    padding: 15px;
+    text-decoration: none;
+    color: var(--Color1);
+    position: relative;
+    display: inline-block;
+
+}
+li a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--Color4);
+    transition: 0.5s ease;
+    z-index: -1;
+    border-radius: 5px;
+}
+li a:hover::before{
+    width: 100%;
+}
+.Home h1 {
+    color: var(--Color1);
+    font: 100;
+    font-size: 19px;
+    position: relative;
+    top: 150px;
+    left: 50px;
+    height: 200px;
+    width: 400px;
+}
+.Home img{
+    width: 512px;
+    height: 512px;
+    border-radius: 500px;
+    position: relative;
+    bottom: 280px;
+    left: 750px;
+}
+.About h1{
+    position: relative;
+    top: 0;
+    left: 50px;
+    width: 10px;
+    height: 10px;
+}
+.About h2{
+    color: var(--Color1);
+    font-size: 19px;
+    width: 400px;
+    height: 200px;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+.About h3{
+    color: var(--Color1);
+    font-size: 19px;
+    width: 800px;
+    height: 20px;
+    position: relative;
+    top: 200px;
+    left: 340px;
+    text-align: center;
+}
+#img1, #img2{
+    outline: var(--Color7) 1px solid;
+    border-radius: 2px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    bottom: 235px;
+    left: 650px;
+    display: inline-block;
+    margin-right: 25px;
+}
+.About{
+    background-color: var(--Color3);
+    height: 100vh;
+    padding: 10px;
+}
+.Services h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:50px ;
+}
+.formContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Services form{
+    height: 530px;
+    background-color: var(--Color5);
+    width: 500px;
+    border-radius: 15px;
+}
+.Services h2{
+text-align: center;
+color: var(--Color1);
+}
+.Services img{
+    display: flex;
+    position: relative;
+    top:0;
+    left: 75px;
+    width: 350px;
+    height: 200px;
+    outline: var(--Color7) 1px solid;
+    border-radius: 2px;
+}
+.Services h3{
+    text-align: center;
+    width: 330px;
+    position: relative;
+    top:0;
+    left: 85px;
+    color: var(--Color1);
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#Left, #Right{
+    outline: var(--Color7) 1px solid;
+    border-radius: 2px;
+    border: none;
+    background-color: var(--Color6);
+    color: var(--Color1);
+    margin: 20px;
+    font-family: "Poiret One";
+}
+#Left:hover, #Right:hover{
+    cursor: pointer;
+    background-color: var(--Color3);
+}
+svg {
+    fill: var(--Color1);
+    width: 35px;
+}
+.Contact{
+    position: relative;
+    top: 0;
+    left: 50px;
+    width: 10px;
+    height: 10px;
+    margin-top: 300px;
+}
+input{
+    height: 25px;
+    width: 700px;
+    margin-top: 10px;
+
+    border-radius: 2px;
+    border: none;
+    background-color: var(--Color6);
+    font-family: "Poiret One";
+    font-size: 18px;
+}
+textarea{
+    width: 700px;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 2px;
+    border: none;
+    background-color: var(--Color6);
+    font-family: "Poiret One";
+    font-size: 18px;
+}
+input:focus, textarea:focus{
+    outline: none;
+}
+#submitter{
+    margin-bottom: 15px;
+    outline: var(--Color7) 1px solid;
+    border-radius: 2px;
+    border: none;
+    width: 100px;
+    height: 35px;
+    background-color: var(--Color6);
+    color: var(--Color1);
+    font-size: 20px;
+    font-family: "Poiret One";
+}
+#submitter:hover{
+    background-color: var(--Color3);
+    cursor: pointer;
+}
